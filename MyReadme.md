@@ -1,33 +1,41 @@
 # NODE-KNEX
 ### Iniciando BD
-knex_teste
+<li> knex_teste
+
 ###### No terminal devem ser usadas aspas simples (') e naão aspas duplas (")
 ##### Comando pra acessar o postgres
-sudo -u postgres psql
+<li> sudo -u postgres psql
+
 ##### Acessar o banco de dados
-/c <name do banco>
+<li> /c <name do banco>
+
 #### Adicionar Projeto ao banco de dados.
-insert into projects(user_id, title) values("1", "Project One");
+<li>insert into projects(user_id, title) values("1", "Project One");
+
 ## Instaladno dependencias
 ### Instalando knex pg e express
-npm i knex pg express
-### criando knexfiles
-npx knex init
+<li>npm i knex pg express
 
-#### criando migrations USERS
-npx knex migrate:make create_table_users;
-#### rodar a ultima migration
-npx knex migrate:latest
-#### criar seed USERS
-npx knex seed:make 001-users
-#### rodar a seed
-npx knex seed:run
+### Criando knexfiles
+<li>npx knex init
 
-#### criando migrations PROJECTS
-npx knex migrate:make create_table_projects
+#### Criando migrations USERS
+<li>npx knex migrate:make create_table_users;
 
-#### criar seed PROJECTS
-npx knex seed:make 001-users
+#### Rodar a ultima migration
+<li> npx knex migrate:latest
+
+#### Criar seed USERS
+<li> npx knex seed:make 001-users
+
+#### Rodar a seed
+<li> npx knex seed:run
+
+#### Criando migrations PROJECTS
+<li>npx knex migrate:make create_table_projects
+
+#### Criar seed PROJECTS
+<li>npx knex seed:make 001-users
 
 #### ERROS
 ===
