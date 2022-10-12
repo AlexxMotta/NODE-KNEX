@@ -7,8 +7,8 @@
 <li> sudo -u postgres psql
 
 ##### Acessar o banco de dados
-<li> /c <name do banco>
-
+<li> /c 'name_do_banco'
+'
 #### Adicionar Projeto ao banco de dados.
 <li>insert into projects(user_id, title) values("1", "Project One");
 
@@ -31,6 +31,9 @@
 #### Rodar a seed
 <li> npx knex seed:run
 
+#### Rodar a seed especifica
+<li> npx knex seed:run --specific name.js
+
 #### Criando migrations PROJECTS
 <li>npx knex migrate:make create_table_projects
 
@@ -38,7 +41,7 @@
 <li>npx knex seed:make 001-users
 
 #### ERROS
-===
+
 <ul> The migration directory is corrupt
 <ul> Uma das soluções é apagar tabela knex_migrations do BD, ela tem o registro de migrações,
 pode não ser a melhor desição, afinal o historico seria perdido, mas como está é uma aplicação

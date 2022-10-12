@@ -1,4 +1,4 @@
-exports.up = knex => knex.schema.createTable('project', table =>{
+exports.up = knex => knex.schema.createTable('projects', table =>{
     table.increments('id')
     table.text('title')
     //Relations
@@ -7,7 +7,7 @@ exports.up = knex => knex.schema.createTable('project', table =>{
     .notNullable()
     .onDelete("CASCADE")
 
-    table.timestamp(true,true)
+    table.timestamps(true,true)
 })
 
-exports.down = knex => knex.schema.dropTable('project')
+exports.down = knex => knex.schema.dropTable('projects')
